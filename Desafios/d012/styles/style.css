@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border: 1px solid black;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin: auto;
+}
+
+header h1{
+    font-family: var(--fonte2);
+    font-size: 5em;
+}
+
+header p{
+    font-family: var(--fonte1);
+    margin-top: 15px;
+}
+
+aside>p{
+    font-size: 3em;
+    font-family: var(--fonte3);
+    margin-top: 80px;
+    font-style: italic;
+    text-indent: 40px;
+    padding: 0px;
+}
