@@ -11,8 +11,12 @@
     padding: 0;
 }
 
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header{
-    border: 1px solid black;
     text-align: center;
     background-color: black;
     color: white;
@@ -20,21 +24,47 @@ header{
     margin: auto;
 }
 
-header h1{
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+header>h1{
     font-family: var(--fonte2);
     font-size: 5em;
+    font-variant: small-caps;
 }
 
-header p{
+header>p{
     font-family: var(--fonte1);
     margin-top: 15px;
+    text-decoration: none;
 }
 
-aside>p{
-    font-size: 3em;
-    font-family: var(--fonte3);
-    margin-top: 80px;
-    font-style: italic;
-    text-indent: 40px;
-    padding: 0px;
+
+section.normal{
+    background-color: white;
+    color: black;    
+}
+
+section.imagem{
+    background-color: rgb(58, 56, 56);
+    color: white;
+}
+
+section.imagem >p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.384);
 }
